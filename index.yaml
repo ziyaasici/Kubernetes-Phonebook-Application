@@ -10,5 +10,7 @@ entries:
     type: application
     urls:
     - https://github.com/ziyaasici/Kubernetes-Phonebook-Application/blob/main/phonebook-0.1.0.tgz
+    #urls:
+    #- s3://helm-phonebook-repo/helm/phonebook-0.1.0.tgz
     version: 0.1.0
 generated: "2024-04-15T04:14:09.09029223Z"
