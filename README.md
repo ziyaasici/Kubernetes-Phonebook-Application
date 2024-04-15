@@ -1,4 +1,4 @@
-# Project: Microservice Architecture for Phonebook Web Application (Python Flask) with MySQL using Kubernetes.
+# Project: Microservice Architecture for Phonebook Web Application (Python Flask) with MySQL using Kubernetes & Helm
 
 ## Description
 
