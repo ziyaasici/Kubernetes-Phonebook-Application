@@ -4,20 +4,6 @@
 
 Phonebook Microservice Web Application aims to create a web application with MySQL Database using Docker and Kubernetes to give students the understanding of Microservice architecture. In this application, we have a frontend service and a backend service to interact with database service. Each service will be managed by a Kubernetes deployment. The backend service will be a gateway for the application and it will serve the necessary web pages for create, delete and update operations while the frontend service will serve a search page in order to conduct read operations. To preserve the data in the database, persistent volume and persistent volume claim concepts should be adopted.
 
-## Problem Statement
-
-- Your team has started working on a project to create a `Phonebook` Application as Web Service.  
-
-- Software Developers in your team have already developed first version of `Phonebook` application. They have designed a database to keep phonebook records with following fields.
-
-  - id: unique identifier for records, data type is integer and it will be auto increment.
-
-  - name: name of record, data type is string.
-
-  - number: phone number belonging to the recorded person.
-
-- Your teammates also created the RESTful web service as given in [Phonebook API](./Phonebook-api.py) using Python Flask Framework. Below table shows how the HTTP methods are designed to affect the given resources identified by URIs.
-
 | HTTP Method  | Action | Example|
 | --- | --- | --- |
 | `GET`     |   Read the records | http://[ec2-hostname]:30001/  |
@@ -101,15 +87,15 @@ Kubernetes-Microservice-Phonebook (folder)
 
 Initial files:
 
-1. README.md                      # Given to the students (Definition of the project)
-2. Image_for_web_server           # Given to the students (Image components of Python Flask Web API for Update/delete/add record)
+1. README.md                      # Given (Definition of the project)
+2. Image_for_web_server           # Given (Image components of Python Flask Web API for Update/delete/add record)
   - app.py      
   - requirements.txt              
   - templates
     - index.html
     - add-update.html
     - delete.html
-3. image_for_result_server        # Given to the students (Image components of Python Flask Web API for search record)
+3. image_for_result_server        # Given (Image components of Python Flask Web API for search record)
   - app.py           
   - requirements.txt              
   - templates
@@ -118,25 +104,25 @@ Initial files:
 Requested files:
 
 ADD/DELETE/UPDATE DEPLOYMENT AND SERVICE
-1. Dockerfile                     # To be delivered by students 
-2. web_server_deployment.yml      # To be delivered by students
-3. web_server_service.yaml        # To be delivered by students
+1. Dockerfile                     # To be delivered 
+2. web_server_deployment.yml      # To be delivered 
+3. web_server_service.yaml        # To be delivered 
 
 SEARCH DEPLOYMENT AND SERVICE
-1. Dockerfile                     # To be delivered by students
-2. result_server_deployment.yml   # To be delivered by students
-3. result_server_service.yaml     # To be delivered by students
+1. Dockerfile                     # To be delivered 
+2. result_server_deployment.yml   # To be delivered 
+3. result_server_service.yaml     # To be delivered 
 
 DATABASE DEPLOYMENT AND SERVICE
-1. mysql_deployement.yml          # To be delivered by students
-2. mysql_service.yaml             # To be delivered by students
-3. persistent_volume.yaml         # To be delivered by students
-4. persistent_volume_claim.yaml   # To be delivered by students
+1. mysql_deployement.yml          # To be delivered 
+2. mysql_service.yaml             # To be delivered 
+3. persistent_volume.yaml         # To be delivered 
+4. persistent_volume_claim.yaml   # To be delivered 
 
 SECRETS AND CONFIGMAP
-1. mysql-secret.yaml              # To be delivered by students
-2. database_configmap.yaml        # To be delivered by students
-3. servers_configmap.yaml         # To be delivered by students
+1. mysql-secret.yaml              # To be delivered 
+2. database_configmap.yaml        # To be delivered 
+3. servers_configmap.yaml         # To be delivered 
 
 ```
 
