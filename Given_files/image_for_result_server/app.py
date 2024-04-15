@@ -41,9 +41,9 @@ def find_records():
     if request.method == 'POST':
         keyword = request.form['username']
         persons = find_persons(keyword)
-        return render_template('index.html', persons=persons, keyword=keyword, show_result=True, developer_name='Rahmatullah Faqiri')
+        return render_template('index.html', persons=persons, keyword=keyword, show_result=True, developer_name='Ziya Asici')
     else:
-        return render_template('index.html', show_result=False, developer_name='Rahmatullah Faqiri')
+        return render_template('index.html', show_result=False, developer_name='Ziya Asici')
 
 
 # Add a statement to run the Flask application which can be reached from any host on port 80.
